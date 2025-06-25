@@ -1,127 +1,56 @@
 import React from 'react';
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-
-const footerStyles = {
-  wrapper: {
-    width: '100%',
-    padding: '60px 80px 30px 80px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    gap: '40px',
-    backgroundColor: '#1C1C1C',
-    margin: '0 auto',
-    position: 'absolute',
-    bottom: '0',
-  },
-  section: {
-    width: '1280px',
-    margin: '0 auto',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  logoArea: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '20px',
-  },
-  navLinks: {
-    display: 'flex',
-    gap: '32px',
-    fontSize: '14px',
-    color: 'white',
-  },
-  contact: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '20px',
-    color: 'white',
-    fontSize: '14px',
-  },
-  contactItem: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-  },
-  bottomBar: {
-    width: '1280px',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '12px 24px 12px 12px',
-    border: '1px solid #262626',
-    borderRadius: '100px',
-    color: 'white',
-    fontSize: '14px',
-  },
-  socialIcons: {
-    display: 'flex',
-    gap: '16px',
-  },
-  iconCircle: {
-    width: '32px',
-    height: '32px',
-    backgroundColor: '#C6FF00',
-    borderRadius: '50%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#1C1C1C',
-    fontSize: '14px',
-  },
-  policyLinks: {
-    display: 'flex',
-    gap: '16px',
-    color: '#999',
-  },
-};
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer style={footerStyles.wrapper}>
+    <footer className="w-full px-20 pt-16 pb-7 flex flex-col items-center gap-10 bg-[#1C1C1C] mx-auto absolute bottom-0">
       {/* Logo and Navigation */}
-      <div style={{ ...footerStyles.section, ...footerStyles.logoArea }}>
+      <div className="w-[1280px] mx-auto flex flex-col items-center gap-5">
         <img src="/shape-30.png" alt="logo" width="32" height="32" />
         <h2 className="text-white font-bold text-lg">YourBanK</h2>
-        <div style={footerStyles.navLinks}>
-          <a href="#">Home</a>
-          <a href="#">Careers</a>
-          <a href="#">About</a>
-          <a href="#">Security</a>
+        <div className="flex gap-8 text-sm text-white">
+          <Link to="/">Home</Link>
+          <Link to="/careers">Careers</Link>
+          <Link to="/about">About</Link>
+          <Link to="/security">Security</Link>
         </div>
       </div>
 
       {/* Contact Info */}
-      <div style={{ ...footerStyles.section, ...footerStyles.contact }}>
-        <div style={footerStyles.contactItem}>
+      <div className="w-[1280px] mx-auto flex items-center gap-5 text-white text-sm">
+        <div className="flex items-center gap-2">
           <FaEnvelope className="text-lime-400" />
           <span>hello@skillbridge.com</span>
         </div>
-        <div style={footerStyles.contactItem}>
+        <div className="flex items-center gap-2">
           <FaPhoneAlt className="text-lime-400" />
           <span>+91 91813 23 2309</span>
         </div>
-        <div style={footerStyles.contactItem}>
+        <div className="flex items-center gap-2">
           <FaMapMarkerAlt className="text-lime-400" />
           <span>Somewhere in the World</span>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div style={footerStyles.bottomBar}>
-        <div style={footerStyles.socialIcons}>
-          <div style={footerStyles.iconCircle}><FaFacebookF /></div>
-          <div style={footerStyles.iconCircle}><FaTwitter /></div>
-          <div style={footerStyles.iconCircle}><FaLinkedinIn /></div>
+      <div className="w-[1280px] flex justify-between items-center px-6 py-3 border border-[#262626] rounded-full text-white text-sm">
+        <div className="flex gap-4">
+          <div className="w-8 h-8 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-sm">
+            <FaFacebookF />
+          </div>
+          <div className="w-8 h-8 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-sm">
+            <FaTwitter />
+          </div>
+          <div className="w-8 h-8 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-sm">
+            <FaLinkedinIn />
+          </div>
         </div>
         <div>YourBank All Rights Reserved</div>
-        <div style={footerStyles.policyLinks}>
-          <a href="#">Privacy Policy</a>
+        <div className="flex gap-4 text-[#999]">
+          <Link to="/privacy-policy">Privacy Policy</Link>
           <span>|</span>
-          <a href="#">Terms of Service</a>
+          <Link to="/terms-of-service">Terms of Service</Link>
         </div>
       </div>
     </footer>
