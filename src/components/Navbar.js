@@ -59,7 +59,7 @@ const Navbar = () => {
           <a href="#" className="h-10 flex items-center text-sm text-white hover:text-lime-400">
             Careers
           </a>
-          <a href="#" className="h-10 flex items-center text-sm text-white hover:text-lime-400">
+          <a href="/pages/About.js" className="h-10 flex items-center text-sm text-white hover:text-lime-400">
             About
           </a>
           <a href="#" className="h-10 flex items-center text-sm text-white hover:text-lime-400">
