@@ -1,11 +1,11 @@
 import React from "react";
 function AboutIntro() {
     return (
-        <section className="grid md:grid-cols-1 ml-4 rounded-3xl p-4 bg-[#1C1C1C] mt-10
-                        lg:ml-20 lg:p-10">
-            <div className="flex flex-col lg:flex-row">
+        <section className="grid md:grid-cols-1 ml-4 mt-10 lg:py-20
+                        lg:p-10 lg:m-14">
+            <div className="flex flex-col lg:flex-row rounded-3xl bg-[#1C1C1C] lg:py-10">
                 <div className="rounded-3xl p-6 gap-3 bg-[#1A1A1A] text-center font-lexend w-full lg:w-1/2
-                        lg:rounded-br-[60px] lg:rounded-bl-3xl lg:rounded-tl-3xl lg:p-16 lg:gap-5 lg:text-left">
+                        lg:rounded-br-[60px] lg:rounded-bl-3xl lg:rounded-tl-3xl lg:p-16 lg:gap-5 lg:text-left border border-black">
                     <p className="font-normal leading-normal text-sm lg:text-lg text-white">
                         Welcome to YourBank
                     </p>

@@ -10,6 +10,7 @@ function About() {
                 <AboutIntro />
                 <MissionVision />
                 <PressReleases />
+
             </div>
         </div>
     );
