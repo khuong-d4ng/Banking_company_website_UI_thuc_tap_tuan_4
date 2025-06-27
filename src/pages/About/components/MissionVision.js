@@ -1,7 +1,7 @@
 import React from "react";
 function MissionVision() {
     return (
-        <section className="ml-4 gap-16 xl:ml-20 grid md:grid-cols-1">
+        <section className="ml-4 gap-16 xl:mx-20 grid md:grid-cols-1 lg:p-10 lg:m-14">
             <div className="gap-2.5 xl:pr-[250px] font-lexend text-center xl:text-left">
                 <p className="font-normal text-3xl leading-normal text-[#CAFF33] xl:text-4xl">
                     Mission & Vision
@@ -35,8 +35,8 @@ function MissionVision() {
                         className="rounded-t-[50px] relative z-10  block xl:hidden object-cover w-full"
                     />
                 </div>
-                <div className="flex border-l border-[#CAFF33] pt-7 gap-2.5 font-lexend leading-normal text-white
-                                xl:pl-10">
+                <div className="flex border-l border-[#CAFF33] pt-7 gap-2.5 font-lexend leading-normal text-white flex-col lg:flex-row text-center lg:text-left
+                                lg:pl-10">
                     <p className="font-medium text-3xl lg:text-4xl">
                         Mission
                     </p>

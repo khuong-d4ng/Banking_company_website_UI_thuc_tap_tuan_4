@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About/About"
 import './index.css';
 import Home from "./pages/Home";
+import Login from './pages/login';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/about" element={<About />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       <Home />
       <Footer />
