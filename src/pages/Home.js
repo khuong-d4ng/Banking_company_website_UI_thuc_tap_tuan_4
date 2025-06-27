@@ -139,7 +139,17 @@ const Home = () => {
             border border-[#3240a8]
             "
         >
-            {/* Right box content here */}
+            <div className='border border-[red] w-90 h-40'>
+
+            </div>
+
+            <div className='border border-[green] w-90 h-[65%]'>
+
+            </div>
+        </div>
+
+        <div className='border border-[blue] w-[20em] h-[20em] absolute top-[50px] right-[50px]'>
+                    <img src='/home-4.png'></img>
         </div>
 
         </div>
