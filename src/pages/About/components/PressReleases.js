@@ -1,7 +1,7 @@
 import React from "react";
 function PressReleases() {
     return (
-        <section className=" px-4 gap-10 lg:mt-32 lg:ml-20 lg:gap-16 space-y-10 mt-10">
+        <section className=" px-4 gap-10 lg:gap-16 lg:p-10 lg:m-14">
             <div className="text-center lg:text-left font-lexend ">
                 <p className="font-normal text-3xl leading-normal text-[#CAFF33]
                                 lg:text-4xl ">
