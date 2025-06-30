@@ -1,23 +1,20 @@
 import { Routes, Route } from 'react-router-dom';
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import About from "./pages/About/About"
-import './index.css';
+import LayoutCommon from "./components/LayoutCommon";
+import About from "./pages/About";
 import Home from "./pages/Home";
 import Login from './pages/login';
-
+import './index.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white max-w-screen-2xl">
-      <Navbar />
-      <Routes>
+    <Routes>
+      <Route element={<LayoutCommon />}>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path='/login' element={<Login />} />
-      </Routes>
-      <Home />
-      <Footer />
-    </div>
+      </Route>
+    </Routes>
   );
 }
+
 export default App;
