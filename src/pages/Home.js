@@ -1,7 +1,7 @@
 import React from 'react';
 const Home = () => {
   return (
-   <div className='w-full h-screen bg-[#00000] display flex flex-col items-center justify-center relative'>
+   <div className='w-full h-screen bg-black display flex flex-col items-center justify-center relative'>
         <div>
             <img className='h-[446.75px] w-[640px] border border-[#a83232] absolute top-0 left-0'
             src="/abc.png"></img>

@@ -3,6 +3,8 @@ import LayoutCommon from "./components/LayoutCommon";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Login from './pages/login';
+import Careers from './pages/Careers'
+
 import './index.css';
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
     <Routes>
       <Route element={<LayoutCommon />}>
         <Route path="/" element={<Home />} />
+          <Route path="/careers" element={<Careers />} />
         <Route path="/about" element={<About />} />
         <Route path='/login' element={<Login />} />
       </Route>
