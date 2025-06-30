@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import LayoutCommon from "./components/LayoutCommon";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Login from './pages/login';
 import './index.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Route element={<LayoutCommon />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path='/login' element={<Login />} />
       </Route>
     </Routes>
   );
