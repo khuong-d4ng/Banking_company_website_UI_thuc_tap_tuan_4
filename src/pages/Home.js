@@ -125,28 +125,111 @@ const Home = () => {
 
         <div
             className="
-            w-[410.1921691894531px]
-            h-[501.2744445800781px]
             gap-[20.66px]
-            border-[0.69px]
-            border-[#fff]
-            p-[27.55px]
+            px-8
+            py-7
             rounded-[8.26px]
             flex
             flex-col
             bg-transparent
-
-            border border-[#3240a8]
+            z-30
             "
+            style={{
+                background: `linear-gradient(0deg, #1A1A1A, #1A1A1A), linear-gradient(214.85deg, rgba(26, 26, 26, 0) 0%, #1A1A1A 39.72%)`,
+                borderWidth: "0.69px",
+                borderStyle: "solid",
+                borderImage: `linear-gradient(0deg, #262626, #262626), 
+                            linear-gradient(214.24deg, rgba(202, 255, 51, 0.2) 0%, rgba(202, 255, 51, 0) 11.24%), 
+                            linear-gradient(214.24deg, rgba(202, 255, 51, 0) 91.73%, rgba(202, 255, 51, 0.2) 99.95%)`,
+                borderImageSlice: 1
+            }}
         >
-            <div className='border border-[red] w-90 h-40'>
 
+            <div className="flex flex-col gap-4 items-center text-xs font-light border border-[#CAFF33] h-[45%]">
+                <div className=''>Your Transaction</div>
+                {/* 1 */}
+                <div className="flex items-center justify-between bg-[#232323] opacity-90 rounded-lg px-4 py-1 w-[100%] relative top-[0px] z-30">
+                    <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-[#CAFF33] flex items-center justify-center">
+                            <span>✅</span>
+                        </div>
+                        <div>
+                            <div className="text-white text-base">Transaction</div>
+                            <div className="text-white text-lg leading-tight">Joel Kenley</div>
+                        </div>
+                    </div>
+                    <div className="text-white text-xl">-$68.00</div>
+                </div>
+                {/* 22 */}
+                <div className="flex items-center justify-between bg-[#232323] rounded-lg px-4 py-1 opacity-30 w-[95%] relative top-[-40px] z-20">
+                    <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-[#CAFF33] flex items-center justify-center">
+                            <span>✅</span>
+                        </div>
+                        <div>
+                            <div className="text-white text-base">Transaction</div>
+                            <div className="text-white text-lg leading-tight">Mark Smith</div>
+                        </div>
+                    </div>
+                    <div className="text-white text-xl ">-$68.00</div>
+                </div>
+                {/* 3 */}
+                <div className="flex items-center justify-between bg-[#232323] rounded-lg px-4 py-1 opacity-20 w-[90%] relative top-[-80px] z-10">
+                    <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-[#CAFF33] flex items-center justify-center">
+                            <span>✅</span>
+                        </div>
+                        <div>
+                            <div className="text-white text-base">Transaction</div>
+                            <div className="text-white text-lg leading-tight">Lenen Roy</div>
+                        </div>
+                    </div>
+                    <div className="text-white text-xl ">-$68.00</div>
+                </div>
             </div>
 
-            <div className='border border-[green] w-90 h-[65%]'>
-
+            {/* Cuc thu 2 */}
+            <div className='font-light text-xs'>
+                {/* Heading */}
+                <div>
+                    <h2 className="text-white font-normal text-lg mb-4">Money Exchange</h2>
+                </div>
+                {/* Card */}
+                <div className="grid grid-cols-2 gap-0 bg-[#181818] rounded-xl overflow-hidden border border-[#232323] font-weight-400">
+                    {/* INR */}
+                    <div className="flex flex-col gap-2 p-4 border-b border-r border-[#232323]">
+                        <div className="flex items-center gap-2">
+                        <span>🟥</span>
+                        <span className="text-white text-base">INR</span>
+                        </div>
+                        <span className="text-[#bdbdbd] text-xs">Indian Rupees</span>
+                        <span className="text-white text-lg mt-4 font-medium">5,0000</span>
+                    </div>
+                    {/* USD */}
+                    <div className="flex flex-col gap-2 p-4 border-b border-[#232323]">
+                        <div className="flex items-center gap-2">
+                        <spam>🟩</spam>
+                        <span className="text-white text-base">USD</span>
+                        </div>
+                        <span className="text-[#bdbdbd] text-xs">United States Dollar</span>
+                        <span className="text-white text-lg mt-4 font-medium">12.00</span>
+                    </div>
+                </div>
+                {/* Exchange button */}
+                <div className="w-full flex justify-center mt-6">
+                    <button
+                        className="w-[95%] h-12 rounded-full bg-[#232823] text-[#CAFF33] text-base tracking-wide"
+                        style={{
+                        background: "rgba(202, 255, 51, 0.07)"
+                        }}
+                    >
+                        Exchange
+                    </button>
+                </div>
             </div>
         </div>
+
+        
 
         <div className='border border-[blue] w-[20em] h-[20em] absolute top-[50px] right-[50px]'>
                     <img src='/home-4.png'></img>
