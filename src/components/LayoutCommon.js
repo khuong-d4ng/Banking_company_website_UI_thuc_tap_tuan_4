@@ -8,12 +8,11 @@ const LayoutCommon = () => {
     <div className="min-h-screen bg-[#1A1A1A] text-white max-w-screen-2xl flex flex-col mx-auto">
        
         <div>
-            <img className='h-[446.75px] w-[640px] absolute top-0 left-0'
+            <img className=' absolute top-0 left-0'
             src="/abc.png"></img>
         </div>
         <Navbar />
-        <div className="flex-1 px-[80px] pt-[150px]">
-          <div className="fixed w-full border border-[yellow] h-[10px]"></div>
+        <div className="flex-1 px-[80px] pt-[100px]">
             <Outlet />
         </div>
         <Footer />

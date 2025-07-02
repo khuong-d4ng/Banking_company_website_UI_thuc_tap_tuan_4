@@ -36,8 +36,8 @@ const Home = () => {
   return (
     <div className="w-full min-h-screen  flex flex-col items-center justify-center relative">
       {/* First section */}
-      <div className="w-full h-[621.27px] relative top-[60px] grid grid-cols-12 gap-0">
-        {/* Left: 6 columns */}
+      <div className="w-full mb-40 relative top-[60px] grid grid-cols-12 gap-0">
+        {/* L: 6 col */}
         <div className="col-span-6 h-[422px] flex flex-col bg-transparent justify-between px-0 py-0 lexend">
           <div className="llc-badge mb-4">
             <img src="/Icon-mark-LLC.png" alt="Icon" />
@@ -66,20 +66,17 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Spacer: 1 column */}
+        {/* Khoang trong: 1 col */}
         <div className="col-span-1"></div>
 
-        {/* Right: 5 columns */}
+        {/* R: 5 col */}
         <div className="col-span-5">
-          {/* Decorative image */}
           <div className=" w-[20em] h-[20em] absolute right-0 top-0 z-10">
             <img src="/home-4.png" alt="Decoration" className="z-10" />
           </div>
-          <div className="relative w-4/5 gap-[20.66px] px-8 py-7 rounded-[8.26px] flex flex-col z-30 border-gradient-custom">
+          <div className="relative w-4/5 px-8 py-7 rounded-[8.26px] flex flex-col z-30 border-gradient-custom">
             {/* Transactions */}
-            <div className="flex flex-col gap-4 items-center text-xs font-light  h-[45%]">
-              <div>Your Transaction</div>
-
+            <div className="flex flex-col gap-4 items-center text-xs font-light">
               {transactions.map((tx) => (
                 <div
                   key={tx.id}
@@ -141,6 +138,29 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex items-center gap-4 absolute bottom-[-100px] right-0">
+          <div className="flex items-center border border-[#232323] rounded-full px-6 py-3 bg-[#181818]">
+            <span className="text-white text-base font-medium leading-tight mr-4 text-left">
+              Supported <br /> Currency
+            </span>
+            <div className="flex gap-3">
+              <span className="w-10 h-10 rounded-full bg-[#23281C] flex items-center justify-center">
+                <span className="text-[#CAFF33] text-xl font-bold">$</span>
+              </span>
+              <span className="w-10 h-10 rounded-full bg-[#23281C] flex items-center justify-center">
+                <span className="text-[#CAFF33] text-xl font-bold">€</span>
+              </span>
+              <span className="w-10 h-10 rounded-full bg-[#23281C] flex items-center justify-center">
+                <span className="text-[#CAFF33] text-xl font-bold">฿</span>
+              </span>
+              <span className="w-10 h-10 rounded-full bg-[#23281C] flex items-center justify-center">
+                <span className="text-[#CAFF33] text-xl font-bold">♦</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       {/* Second section */}
@@ -223,11 +243,11 @@ const Home = () => {
       </div>
 
       {/*** Third section */}
-      <div className="border w-full">
+      <div className="w-full">
         <div className="w-full bg-transparent mt-20">
           <div className=" rounded-2xl w-full">
             {/* Header */}
-            <div className=" border border-[red]">
+            <div className="">
               <h2 className="text-[#CAFF33] text-4xl font-base mb-2">
                 Use Cases
               </h2>
@@ -253,7 +273,7 @@ const Home = () => {
                   <div className="bg-[#1A1A1A] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
                     <div className="mb-4 relative">
                       <span className="bg-[#CAFF33] bg-opacity-10 rounded-full p-6 absolute left-1/2 -translate-x-1/2 -top-2 blur-[2px] w-16 h-16"></span>
-                      <span className="relative z-10 text-3xl">🤡</span>
+                      <span className="relative z-10 text-3xl">❤️</span>
                     </div>
                     <div className="text-white text-lg font-base text-center">
                       Managing Personal Finances
@@ -263,7 +283,7 @@ const Home = () => {
                   <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
                     <div className="mb-4 relative">
                       <span className="bg-[#CAFF33] bg-opacity-10 rounded-full p-6 absolute left-1/2 -translate-x-1/2 -top-2 blur-[2px] w-16 h-16"></span>
-                      <span className="relative z-10 text-3xl">🤡</span>
+                      <span className="relative z-10 text-3xl">💚</span>
                     </div>
                     <div className="text-white text-lg font-base text-center">
                       Saving for the Future
@@ -273,7 +293,7 @@ const Home = () => {
                   <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
                     <div className="mb-4 relative">
                       <span className="bg-[#CAFF33] bg-opacity-10 rounded-full p-6 absolute left-1/2 -translate-x-1/2 -top-2 blur-[2px] w-16 h-16"></span>
-                      <span className="relative z-10 text-3xl">🤡</span>
+                      <span className="relative z-10 text-3xl">💙</span>
                     </div>
                     <div className="text-white text-lg font-base text-center">
                       Homeownership
@@ -283,7 +303,7 @@ const Home = () => {
                   <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
                     <div className="mb-4 relative">
                       <span className="bg-[#CAFF33] bg-opacity-10 rounded-full p-6 absolute left-1/2 -translate-x-1/2 -top-2 blur-[2px] w-16 h-16"></span>
-                      <span className="relative z-10 text-3xl">🤡</span>
+                      <span className="relative z-10 text-3xl">🩷</span>
                     </div>
                     <div className="text-white text-lg font-base text-center">
                       Education Funding
@@ -292,9 +312,9 @@ const Home = () => {
                 </div>
               </div>
               {/* Right: For Individuals (6 columns) */}
-              <div className="col-span-12 lg:col-span-6 flex flex-col justify-between  px-10 border border-[red]">
+              <div className="col-span-12 lg:col-span-6 flex flex-col justify-between  px-10">
                 <div>
-                  <h3 className="text-white text-2xl font-base mb-4  border border-[blue]">
+                  <h3 className="text-white text-2xl font-base mb-4">
                     For Individuals
                   </h3>
                   <p className="text-[#B3B3B3] text-base font-light mb-8">
@@ -305,7 +325,7 @@ const Home = () => {
                     for our customers
                   </p>
                   {/* Stats */}
-                  <div className="  border border-[green] flex flex-col md:flex-row gap-8 md:gap-0 md:divide-x md:divide-dashed md:divide-[#B3B3B3] mb-8">
+                  <div className=" flex flex-col md:flex-row gap-8 md:gap-0 md:divide-x md:divide-dashed md:divide-[#262626] mb-8">
                     <div className="flex-1 flex flex-col items-center md:items-start px-0 md:px-8">
                       <div className="text-[#CAFF33] text-4xl font-bold mb-2">
                         78%
@@ -332,14 +352,14 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <button className=" border border-[yellow] mt-4 md:mt-0 w-fit px-8 py-3 rounded-full border border-[#B3B3B3] text-white bg-transparent hover:bg-[#232323] transition">
+                <button className=" border border-[#262626] mt-4 md:mt-0 w-fit px-8 py-3 rounded-full text-white bg-[#1C1C1C] hover:bg-[#232323] transition">
                   Learn More
                 </button>
               </div>
             </div>
-            {/* For Business Section */}
+            {/* For Business*/}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mt-10">
-              {/* Left: For Business Text & Stats */}
+              {/* L: For Business*/}
               <div className="col-span-12 lg:col-span-6 flex flex-col justify-center rounded-xl px-10 py-10">
                 <h3 className="text-white text-2xl font-semibold mb-4">
                   For Business
@@ -352,7 +372,7 @@ const Home = () => {
                   tools and support to achieve them
                 </p>
                 {/* Stats */}
-                <div className="flex flex-col md:flex-row gap-8 md:gap-0 md:divide-x md:divide-dashed md:divide-[#B3B3B3] mb-8">
+                <div className="flex flex-col md:flex-row gap-8 md:gap-0 md:divide-x md:divide-dashed md:divide-[#262626] mb-8">
                   <div className="flex-1 flex flex-col items-center md:items-start px-0 md:px-8">
                     <div className="text-[#CAFF33] text-4xl font-bold mb-2">
                       65%
@@ -378,14 +398,13 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <button className="mt-4 md:mt-0 w-fit px-8 py-3 rounded-full border border-[#B3B3B3] text-white bg-transparent hover:bg-[#232323] transition">
+                <button className="mt-4 md:mt-0 w-fit px-8 py-3 rounded-full border border-[#262626] text-white bg-[#1C1C1C] hover:bg-[#232323] transition">
                   Learn More
                 </button>
               </div>
 
-              {/* Right: For Business Cards */}
+              {/* R: For Business*/}
               <div className="col-span-12 lg:col-span-6 flex flex-col justify-center px-10 py-10 bg-[#1C1C1C] rounded-xl relative">
-                {/* Optional Image Placeholder (đối xứng với bên trái code mẫu) */}
                 <div>
                   <img
                     src="/use-case-ab-2.png"
@@ -537,86 +556,106 @@ const Home = () => {
       </div>
 
       {/* FAQ Section */}
-<div className="w-full mt-20">
-  <h2 className="text-white text-4xl font-base mb-2">
-    <span className="text-[#CAFF33]">Frequently</span> Asked Questions
-  </h2>
-  <p className="text-[#B3B3B3] text-base font-light mb-10">
-    Still you have any questions? Contact our Team via support@yourbank.com
-  </p>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    {/* Card 1 */}
-    <div className="border border-[#262626] rounded-xl p-8">
-      <h3 className="text-white text-lg font-medium mb-4">
-        How do I open an account with YourBank?
-      </h3>
-      <p className="text-[#B3B3B3] text-base font-light">
-        Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help.
-      </p>
-    </div>
-    {/* Card 2 */}
-    <div className="border border-[#262626] rounded-xl p-8">
-      <h3 className="text-white text-lg font-medium mb-4">
-        What documents do I need to provide to apply for a loan?
-      </h3>
-      <p className="text-[#B3B3B3] text-base font-light">
-        The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.
-      </p>
-    </div>
-    {/* Card 3 */}
-    <div className="border border-[#262626] rounded-xl p-8">
-      <h3 className="text-white text-lg font-medium mb-4">
-        How can I access my accounts online?
-      </h3>
-      <p className="text-[#B3B3B3] text-base font-light">
-        Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.
-      </p>
-    </div>
-    {/* Card 4 */}
-    <div className="border border-[#262626] rounded-xl p-8">
-      <h3 className="text-white text-lg font-medium mb-4">
-        Are my transactions and personal information secure?
-      </h3>
-      <p className="text-[#B3B3B3] text-base font-light">
-        At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in place.
-      </p>
-    </div>
-  </div>
-  <div className="w-full flex justify-center mt-8">
-    <button className="px-8 py-3 rounded-full border border-[#262626] text-white bg-transparent hover:bg-[#232323] transition">
-      Load All FAQ's <span className="ml-2">⌄</span>
-    </button>
-  </div>
-</div>
+      <div className="w-full mt-20">
+        <h2 className="text-white text-4xl font-base mb-2">
+          <span className="text-[#CAFF33]">Frequently</span> Asked Questions
+        </h2>
+        <p className="text-[#B3B3B3] text-base font-light mb-10">
+          Still you have any questions? Contact our Team via
+          support@yourbank.com
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Card 1 */}
+          <div className="border border-[#262626] rounded-xl p-8">
+            <h3 className="text-white text-lg font-medium mb-4">
+              How do I open an account with YourBank?
+            </h3>
+            <p className="text-[#B3B3B3] text-base font-light">
+              Opening an account with YourBank is easy. Simply visit our website
+              and click on the "Open an Account" button. Follow the prompts,
+              provide the required information, and complete the application
+              process. If you have any questions or need assistance, our
+              customer support team is available to help.
+            </p>
+          </div>
+          {/* Card 2 */}
+          <div className="border border-[#262626] rounded-xl p-8">
+            <h3 className="text-white text-lg font-medium mb-4">
+              What documents do I need to provide to apply for a loan?
+            </h3>
+            <p className="text-[#B3B3B3] text-base font-light">
+              The documents required for a loan application may vary depending
+              on the type of loan you are applying for. Generally, you will need
+              to provide identification documents (such as a passport or
+              driver's license), proof of income (such as pay stubs or tax
+              returns), and information about the collateral (if applicable).
+              Our loan officers will guide you through the specific requirements
+              during the application process.
+            </p>
+          </div>
+          {/* Card 3 */}
+          <div className="border border-[#262626] rounded-xl p-8">
+            <h3 className="text-white text-lg font-medium mb-4">
+              How can I access my accounts online?
+            </h3>
+            <p className="text-[#B3B3B3] text-base font-light">
+              Accessing your accounts online is simple and secure. Visit our
+              website and click on the "Login" button. Enter your username and
+              password to access your accounts. If you haven't registered for
+              online banking, click on the "Enroll Now" button and follow the
+              registration process. If you need assistance, our customer support
+              team is available to guide you.
+            </p>
+          </div>
+          {/* Card 4 */}
+          <div className="border border-[#262626] rounded-xl p-8">
+            <h3 className="text-white text-lg font-medium mb-4">
+              Are my transactions and personal information secure?
+            </h3>
+            <p className="text-[#B3B3B3] text-base font-light">
+              At YourBank, we prioritize the security of your transactions and
+              personal information. We employ industry-leading encryption and
+              multi-factor authentication to ensure that your data is protected.
+              Additionally, we regularly update our security measures to stay
+              ahead of emerging threats. You can bank with confidence knowing
+              that we have robust security systems in place.
+            </p>
+          </div>
+        </div>
+        <div className="w-full flex justify-center mt-8">
+          <button className="px-8 py-3 rounded-full border border-[#262626] text-white bg-transparent hover:bg-[#232323] transition">
+            Load All FAQ's <span className="ml-2">⌄</span>
+          </button>
+        </div>
+      </div>
 
-{/* Testimonials Section */}
-<OurTestimonials />
+      {/* Testimonials Section */}
+      <OurTestimonials />
 
-{/* Call to Action Section */}
-<div className="w-full mt-20">
-  <div className="relative w-full border border-[#262626] rounded-2xl flex flex-col md:flex-row items-center justify-between px-8 py-10 gap-8 bg-transparent">
-    <div className="h-full absolute left-0">
-              <img src="./last-section-ab-1.png">
-              </img>
-    </div>
-    {/* Left: Title & Content */}
-    <div className="flex-1">
-      <h2 className="text-white text-3xl font-normal mb-2">
-        Start your financial journey with <span className="text-[#CAFF33]">YourBank today!</span>
-      </h2>
-      <p className="text-[#bdbdbd] text-base font-light max-w-5xl text-left">
-        Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus.
-      </p>
-    </div>
-    {/* Right: Button */}
-    <div>
-      <button className="bg-[#CAFF33] text-[#232323] font-normal px-8 py-3 rounded-full focus:outline-none hover:bg-[#b2e62e] transition">
-        Open Account
-      </button>
-    </div>
-  </div>
-</div>
-
+      {/* lass\t Section */}
+      <div className="w-full mt-20 mb-20">
+        <div className="relative w-full border border-[#262626] rounded-2xl flex flex-col md:flex-row items-center justify-between px-8 py-10 gap-8 bg-transparent">
+          <div className="h-full absolute left-0">
+            <img src="./last-section-ab-1.png"></img>
+          </div>
+          <div className="flex-1">
+            <h2 className="text-white text-3xl font-normal mb-2">
+              Start your financial journey with{" "}
+              <span className="text-[#CAFF33]">YourBank today!</span>
+            </h2>
+            <p className="text-[#bdbdbd] text-base font-light max-w-5xl text-left">
+              Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus
+              pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus.
+              Nascetur viverra arcu sed amet cursus purus.
+            </p>
+          </div>
+          <div>
+            <button className="bg-[#CAFF33] text-[#232323] font-normal px-8 py-3 rounded-full focus:outline-none hover:bg-[#b2e62e] transition">
+              Open Account
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

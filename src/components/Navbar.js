@@ -1,7 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'instant' });
+};
 
 const Navbar = () => {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
+
   return (
     <nav className="fixed top-0 left-0 z-50 flex justify-center w-full ">
       <div className="flex items-center justify-between w-[1280px] h-[73px] mt-8 rounded-full border border-[#262626] px-6 py-3 box-border bg-[#1C1C1C]">
