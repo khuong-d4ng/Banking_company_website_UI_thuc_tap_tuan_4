@@ -3,6 +3,7 @@
 }
 body {
   font-family: 'Lexend', sans-serif;
+  background-color: #1A1A1A;
 }
 .App-logo {
   height: 40vmin;
@@ -37,4 +38,15 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.fade-left-testimonials {
+  background: linear-gradient(
+    to right,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(28, 28, 28, 0.85) 25%,
+    rgba(28, 28, 28, 0.5) 60%,
+    rgba(28, 28, 28, 0.1) 85%,
+    transparent 100%
+  );
 }

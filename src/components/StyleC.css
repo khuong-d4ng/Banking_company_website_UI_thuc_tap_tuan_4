@@ -1,0 +1,21 @@
+.fade-left-testimonials{
+  background: linear-gradient(
+    to right,
+    rgba(26, 26, 26, 1) 10%,
+    rgba(26, 26, 26, 0.85) 50%,
+    rgba(26, 26, 26, 0.5) 90%,
+    rgba(26, 26, 26, 0.1) 100%,
+    transparent 100%
+  );
+}
+
+.fade-right-testimonials{
+  background: linear-gradient(
+    to left,
+    rgba(26, 26, 26, 1) 10%,
+    rgba(26, 26, 26, 0.85) 50%,
+    rgba(26, 26, 26, 0.5) 90%,
+    rgba(26, 26, 26, 0.1) 100%,
+    transparent 100%
+  );
+}
