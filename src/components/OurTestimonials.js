@@ -1,74 +1,88 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import "D:/THUC_TAP/Banking_company_website_UI_thuc_tap_tuan_4/src/components/StyleC.css"; 
+const testimonials = [
+  {
+    name: "Sara T",
+    text: "YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.",
+  },
+  {
+    name: "John D",
+    text: "I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.",
+  },
+  {
+    name: "Emily G",
+    text: "I love the convenience of YourBank’s mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.",
+  },
+];
 
 function OurTestimonials() {
-    const [activeTab, setActiveTab] = useState("individual");
+  return (
+    <div className="w-full mt-20">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-[80px] ">
+        <div>
+          <h2 className="text-white text-4xl font-base mb-2">
+            Our <span className="text-[#CAFF33]">Testimonials</span>
+          </h2>
+          <p className="text-[#e0e0e0] max-w-4xl">
+            Discover how YourBank has transformed lives with innovative digital
+            solutions and personalized customer service. See why our clients
+            trust us for a secure and prosperous financial journey
+          </p>
+        </div>
+        <div className="flex gap-2 mt-2 md:mt-0 border-[#262626] border rounded-full px-3 py-2 bg-[#1C1C1C]">
+          <button className="bg-[#CAFF33] text-[#232323] font-medium px-6 py-2 rounded-full focus:outline-none">
+            For Individuals
+          </button>
+          <button className="bg-transparent text-white font-medium px-6 py-2 rounded-full focus:outline-none">
+            For Businesses
+          </button>
+        </div>
+      </div>
+      {/* Testimonials Cards */}
+      <div className="w-full flex items-center justify-between lg:gap-6 lg:py-14 mt-10">
+        {/* Left arrow */}
+        <button className="rounded-full border border-[#262626] p-3 w-12 h-12 flex justify-center items-center">
+          <FaArrowLeft className="text-[#CAFF33]" />
+        </button>
 
-    return (
-        <section className="w-full px-4 lg:px-20 py-10 grid grid-cols-1 gap-10 overflow-hidden">
-            <div className="w-full text-center lg:text-left">
-                {/* Header */}
-                <div className="gap-5 lg:gap-40 flex flex-col lg:flex-row w-full">
-                    <div className="w-full lg:w-2/3">
-                        <p className="font-medium text-3xl font-lexend text-white lg:text-4xl">
-                            Our <span className="text-[#CAFF33]">Testimonials</span>
-                        </p>
-                        <p className="font-light font-lexend text-sm text-[#B3B3B3] lg:text-base">
-                            Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service.
-                        </p>
-                    </div>
-                    <div className="rounded-[82px] border border-[#262626] bg-[#262626] px-1 py-3 flex justify-center gap-2 lg:w-1/3 font-lexend">
-                        <button
-                            onClick={() => setActiveTab("individual")}
-                            className={`rounded-[140px] px-5 py-1 text-sm ${activeTab === "individual" ? "bg-[#CAFF33] text-[#1C1C1C]" : "text-white hover:bg-[#333333]"}`}>
-                            For Individuals
-                        </button>
-                        <button
-                            onClick={() => setActiveTab("business")}
-                            className={`rounded-[140px] px-5 py-1 text-sm ${activeTab === "business" ? "bg-[#CAFF33] text-[#1C1C1C]" : "text-white hover:bg-[#333333]"}`}>
-                            For Businesses
-                        </button>
-                    </div>
-                </div>
-
-                {/* Testimonial Cards + Arrow */}
-                <div className="w-full flex items-center justify-between lg:gap-6 lg:py-14 mt-10">
-                    {/* Left arrow */}
-                    <button className="rounded-full border border-[#262626] p-3 w-12 h-12 flex justify-center items-center">
-                        <FaArrowLeft />
-                    </button>
-
-                    {/* Testimonials container */}
-                    <div className="flex overflow-x-auto gap-6 lg:gap-10 scroll-smooth no-scrollbar">
-                        {[1, 2, 3].map((item, index) => (
-                            <div
-                                key={index}
-                                className={`min-w-[90%] max-w-md lg:min-w-[300px] lg:max-w-[350px] border border-[#262626] bg-[#1C1C1C] p-6 rounded-xl ${index > 0 ? "hidden lg:block" : ""
-                                    }`}
-                            >
-                                <div className="flex flex-col items-center gap-4">
-                                    <img
-                                        src="/images/Text.png"
-                                        alt="Testimonial Icon"
-                                        className="w-[36px] h-[28px] object-contain"
-                                    />
-                                    <p className="font-lexend text-sm text-white text-center leading-relaxed">
-                                        I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure financing.
-                                    </p>
-                                    <p className="text-[#CAFF33] text-sm font-medium mt-2">John D</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Right arrow */}
-                    <button className="rounded-full border border-[#262626] p-3 w-12 h-12 flex justify-center items-center">
-                        <FaArrowRight />
-                    </button>
-                </div>
+        {/* Testimonials container */}
+        {/* Testimonials container */}
+        <div className="flex overflow-x-auto gap-6 lg:gap-10 scroll-smooth no-scrollbar relative">
+        <div className="absolute left-0 top-0 h-full w-[150px] fade-left-testimonials pointer-events-none z-10"></div>
+        <div className="h-full w-[150px] absolute right-0 fade-right-testimonials"></div>
+          {testimonials.map((item, index) => (
+            <div
+              key={index}
+              className={`min-w-[90%] max-w-md lg:min-w-[300px] lg:max-w-[350px] border border-[#262626] bg-[#1C1C1C] p-6 rounded-xl ${
+                index > 0 ? "hidden lg:block" : ""
+              }`}
+            >
+              <div className="flex flex-col items-center gap-4">
+                <img
+                  src="/images/Text.png"
+                  alt="Testimonial Icon"
+                  className="w-[36px] h-[28px] object-contain"
+                />
+                <p className="font-lexend text-sm text-white text-center leading-relaxed">
+                  {item.text}
+                </p>
+                <p className="text-[#CAFF33] text-sm font-medium mt-2">
+                  {item.name}
+                </p>
+              </div>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+
+        {/* Right arrow */}
+        <button className="rounded-full border border-[#262626] p-3 w-12 h-12 flex justify-center items-center">
+          <FaArrowRight className="text-[#CAFF33]" />
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default OurTestimonials;

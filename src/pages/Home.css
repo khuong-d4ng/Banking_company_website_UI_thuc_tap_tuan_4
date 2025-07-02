@@ -1,0 +1,35 @@
+
+.html{
+  font-family: 'Lexend', sans-serif;  
+}
+
+.transaction-card {
+  @apply flex items-center justify-between rounded-lg px-4 py-1 bg-[#232323];
+}
+
+.exchange-card {
+  @apply flex flex-col gap-2 p-4 border-[#232323];
+}
+
+.exchange-btn {
+  @apply w-[95%] h-12 rounded-full text-[#CAFF33] text-base tracking-wide;
+  background: rgba(202, 255, 51, 0.07);
+}
+
+.llc-badge {
+  width: 278px;
+  height: 40px;
+  gap: 4px;
+  padding: 8px 16px 8px 8px;
+  border-radius: 61px;
+  background: #232323;
+  display: flex;
+  align-items: center;
+}
+
+.border-gradient-custom {
+    background: #1a1a1a;
+  border-width: 0.69px;
+  border-style: solid;
+  border-color: rgb(71, 104, 23);
+}
