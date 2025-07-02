@@ -6,7 +6,7 @@ const Footer = () => {
   return (
    <footer className="w-full px-20 pt-16 pb-7 flex flex-col items-center gap-10 bg-[#1C1C1C] mt-auto">
       {/* Logo and Navigation */}
-      <div className="w-[1280px] mx-auto flex flex-col items-center gap-5">
+      <div className="w-full max-w-[1280px] mx-auto flex flex-col items-center gap-5">
         <img src="/shape-30.png" alt="logo" width="32" height="32" />
         <h2 className="text-white font-bold text-lg">YourBanK</h2>
         <div className="flex gap-8 text-sm text-white">
@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="w-[1280px] mx-auto flex items-center gap-5 text-white text-sm">
+      <div className="w-full max-w-[1280px] mx-auto flex items-center gap-5 text-white text-sm">
         <div className="flex items-center gap-2">
           <FaEnvelope className="text-lime-400" />
           <span>hello@skillbridge.com</span>
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="w-[1280px] flex justify-between items-center px-6 py-3 border border-[#262626] rounded-full text-white text-sm">
+      <div className="w-full max-w-[1280px] flex justify-between items-center px-6 py-3 border border-[#262626] rounded-full text-white text-sm">
         <div className="flex gap-4">
           <div className="w-8 h-8 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-sm">
             <FaFacebookF />
