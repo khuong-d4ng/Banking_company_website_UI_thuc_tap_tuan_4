@@ -13,7 +13,6 @@ const LayoutCommon = () => {
         </div>
         <Navbar />
         <div className="flex-1 px-[80px] pt-[100px]">
-          <div className="fixed w-full border border-[yellow] h-[10px]"></div>
             <Outlet />
         </div>
         <Footer />

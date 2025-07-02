@@ -80,7 +80,7 @@ const Home = () => {
           </div>
           <div className="relative w-4/5 px-8 py-7 rounded-[8.26px] flex flex-col z-30 border-gradient-custom bg-[#181818]">
             {/* Transactions */}
-            <div className="flex flex-col gap-4 items-center text-xs font-light">
+            <div className="flex flex-col gap-3 items-center text-xs font-light h-fit max-h-[180px]">
               {transactions.map((tx) => (
                 <div
                   key={tx.id}
