@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "D:/THUC_TAP/Banking_company_website_UI_thuc_tap_tuan_4/src/components/StyleC.css"; 
+import TitleHome from "./HomeComponent/TitleHome";
 const testimonials = [
   {
     name: "Sara T",
@@ -14,6 +15,18 @@ const testimonials = [
     name: "Emily G",
     text: "I love the convenience of YourBank’s mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.",
   },
+   {
+    name: "Emily G",
+    text: "I love the convenience of YourBank’s mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.",
+  },
+   {
+    name: "Emily G",
+    text: "I love the convenience of YourBank’s mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.",
+  },
+   {
+    name: "Emily G",
+    text: "I love the convenience of YourBank’s mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.",
+  },
 ];
 
 function OurTestimonials() {
@@ -22,14 +35,15 @@ function OurTestimonials() {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-[80px] ">
         <div>
-          <h2 className="text-white text-4xl font-base mb-2">
-            Our <span className="text-[#CAFF33]">Testimonials</span>
-          </h2>
-          <p className="text-[#e0e0e0] max-w-4xl">
-            Discover how YourBank has transformed lives with innovative digital
+  <TitleHome
+  title={[
+    { text: "Our", highlight: false },
+    { text: " Testimonials", highlight: true }
+  ]}
+  subtitle="Discover how YourBank has transformed lives with innovative digital
             solutions and personalized customer service. See why our clients
-            trust us for a secure and prosperous financial journey
-          </p>
+            trust us for a secure and prosperous financial journey"
+/>
         </div>
         <div className="flex gap-2 mt-2 md:mt-0 border-[#262626] border rounded-full px-3 py-2 bg-[#1C1C1C]">
           <button className="bg-[#CAFF33] text-[#232323] font-medium px-6 py-2 rounded-full focus:outline-none">

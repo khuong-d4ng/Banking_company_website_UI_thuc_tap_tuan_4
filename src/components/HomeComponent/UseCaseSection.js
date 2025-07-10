@@ -1,4 +1,5 @@
 import React from "react";
+import TitleHome from "./TitleHome";
 
 const UseCaseSection = () => (
   <section className="w-full">
@@ -6,17 +7,18 @@ const UseCaseSection = () => (
       <div className="rounded-2xl w-full">
         {/* Header */}
         <div>
-          <h2 className="text-[#CAFF33] text-4xl font-base mb-2">
-            Use Cases
-          </h2>
-          <p className="text-[#B3B3B3] text-base font-light mb-10">
-            At YourBank, we cater to the diverse needs of individuals and
-            businesses alike, offering a wide range of financial solutions
-          </p>
+<TitleHome
+  title={[
+    { text: "Use", highlight: true },
+    { text: " Case", highlight: true }
+  ]}
+  subtitle="At YourBank, we cater to the diverse needs of individuals and
+            businesses alike, offering a wide range of financial solutions"
+/>
         </div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-10">
           {/* Left: Use Case Cards (6 columns) */}
           <div className="col-span-12 lg:col-span-6 flex flex-col justify-center px-10 py-10 bg-[#1C1C1C] rounded-xl relative">
             <div>
@@ -26,9 +28,9 @@ const UseCaseSection = () => (
                 className="w-auto h-auto mb-6 absolute top-0 left-0"
               />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+            <div className="grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-4 relative">
               {/* Card 1 */}
-              <div className="bg-[#1A1A1A] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
+              <div className="bg-[#1A1A1A] rounded-xl border border-[#262626] flex flex-col items-center md:pt-3 px-3 py-3 lg:px-6 lg:py-8">
                 <div className="mb-4 relative">
                   <span className="bg-[#CAFF33] bg-opacity-10 rounded-full p-6 absolute left-1/2 -translate-x-1/2 -top-2 blur-[2px] w-16 h-16"></span>
                   <span className="relative z-10 text-3xl">❤️</span>
@@ -38,7 +40,7 @@ const UseCaseSection = () => (
                 </div>
               </div>
               {/* Card 2 */}
-              <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
+              <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center md:pt-3 px-3 py-3 lg:px-6 lg:py-8">
                 <div className="mb-4 relative">
                   <span className="bg-[#CAFF33] bg-opacity-10 rounded-full p-6 absolute left-1/2 -translate-x-1/2 -top-2 blur-[2px] w-16 h-16"></span>
                   <span className="relative z-10 text-3xl">💚</span>
@@ -48,7 +50,7 @@ const UseCaseSection = () => (
                 </div>
               </div>
               {/* Card 3 */}
-              <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
+              <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center md:pt-3 px-3 py-3 lg:px-6 lg:py-8">
                 <div className="mb-4 relative">
                   <span className="bg-[#CAFF33] bg-opacity-10 rounded-full p-6 absolute left-1/2 -translate-x-1/2 -top-2 blur-[2px] w-16 h-16"></span>
                   <span className="relative z-10 text-3xl">💙</span>
@@ -58,7 +60,7 @@ const UseCaseSection = () => (
                 </div>
               </div>
               {/* Card 4 */}
-              <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
+              <div className="bg-[#181818] rounded-xl border border-[#262626] flex flex-col items-center md:pt-3 px-3 py-3 lg:px-6 lg:py-8">
                 <div className="mb-4 relative">
                   <span className="bg-[#CAFF33] bg-opacity-10 rounded-full p-6 absolute left-1/2 -translate-x-1/2 -top-2 blur-[2px] w-16 h-16"></span>
                   <span className="relative z-10 text-3xl">🩷</span>
@@ -116,7 +118,7 @@ const UseCaseSection = () => (
           </div>
         </div>
         {/* For Business */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-10 mt-10">
           {/* L: For Business */}
           <div className="col-span-12 lg:col-span-6 flex flex-col justify-center rounded-xl py-10">
             <h3 className="text-white text-2xl font-medium mb-4">
@@ -169,7 +171,7 @@ const UseCaseSection = () => (
                 className="w-auto h-auto mb-6 absolute top-0 right-0"
               />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+            <div className="grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-4 relative">
               {/* Card 1 */}
               <div className="bg-[#1A1A1A] rounded-xl border border-[#262626] flex flex-col items-center py-8 px-6">
                 <div className="mb-4 relative">

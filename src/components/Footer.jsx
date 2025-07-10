@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-   <footer className="w-full px-20 pt-16 pb-7 flex flex-col items-center gap-10 bg-[#1C1C1C] mt-auto">
+    <footer className="w-full px-4 sm:px-10 pt-16 pb-7 flex flex-col items-center gap-10 bg-[#1C1C1C] mt-auto">
       {/* Logo and Navigation */}
       <div className="w-full max-w-[1280px] mx-auto flex flex-col items-center gap-5">
         <img src="/shape-30.png" alt="logo" width="32" height="32" />
         <h2 className="text-white font-bold text-lg">YourBanK</h2>
-        <div className="flex gap-8 text-sm text-white">
+        <div className="flex flex-wrap gap-6 text-sm text-white justify-center">
           <Link to="/">Home</Link>
           <Link to="/careers">Careers</Link>
           <Link to="/about">About</Link>
@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="w-full max-w-[1280px] mx-auto flex items-center gap-5 text-white text-sm">
+      <div className="w-full max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-white text-sm">
         <div className="flex items-center gap-2">
           <FaEnvelope className="text-lime-400" />
           <span>hello@skillbridge.com</span>
@@ -34,22 +34,25 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="w-full max-w-[1280px] flex justify-between items-center px-6 py-3 border border-[#262626] rounded-full text-white text-sm">
-        <div className="flex gap-4">
-          <div className="w-8 h-8 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-sm">
+      <div className="w-full max-w-[1280px] flex flex-col items-center gap-4 border border-[#262626] rounded-2xl px-4 py-6 sm:rounded-full sm:flex-row sm:justify-between sm:items-center sm:px-6 sm:py-3 text-white text-sm">
+        {/* Socials */}
+        <div className="flex gap-4 mb-2 sm:mb-0">
+          <div className="w-10 h-10 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-lg">
             <FaFacebookF />
           </div>
-          <div className="w-8 h-8 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-sm">
+          <div className="w-10 h-10 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-lg">
             <FaTwitter />
           </div>
-          <div className="w-8 h-8 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-sm">
+          <div className="w-10 h-10 bg-lime-200 rounded-full flex justify-center items-center text-[#1C1C1C] text-lg">
             <FaLinkedinIn />
           </div>
         </div>
-        <div>YourBank All Rights Reserved</div>
-        <div className="flex gap-4 text-[#999]">
+        {/* Copyright */}
+        <div className="text-center">YourBank All Rights Reserved</div>
+        {/* Policies */}
+        <div className="flex gap-2 text-[#999] flex-wrap justify-center">
           <Link to="/privacy-policy">Privacy Policy</Link>
-          <span>|</span>
+          <span className="hidden sm:inline">|</span>
           <Link to="/terms-of-service">Terms of Service</Link>
         </div>
       </div>

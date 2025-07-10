@@ -14,7 +14,7 @@ const SignUp = () => {
           ></img>
         </div>
         {/* Title & Description */}
-        <div className="text-center border border-[blue] py-[80px]">
+        <div className="text-center py-[80px]">
           <h2 className="text-[#CAFF33] text-4xl font-bold mb-4">Sign Up</h2>
           <p className="text-white text-base font-light max-w-xl mx-auto">
             Join our community today! Create an account to unlock exclusive

@@ -1,4 +1,5 @@
 import React from "react";
+import TitleHome from "./TitleHome";
 
 const faqData = [
   {
@@ -37,12 +38,13 @@ const faqData = [
 
 const FAQSection = () => (
   <section className="w-full mt-20">
-  <h2 className="text-white text-4xl font-base mb-2">
-    <span className="text-[#CAFF33]">Frequently</span> Asked Questions
-  </h2>
-  <p className="text-[#B3B3B3] text-base font-light mb-10">
-    Still you have any questions? Contact our Team via support@yourbank.com
-  </p>
+  <TitleHome
+  title={[
+    { text: "Frequently", highlight: true },
+    { text: " Asked Questions", highlight: false }
+  ]}
+  subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+/>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {faqData.map((item, index) => (

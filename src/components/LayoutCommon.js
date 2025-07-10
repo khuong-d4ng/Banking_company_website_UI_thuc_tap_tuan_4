@@ -12,7 +12,7 @@ const LayoutCommon = () => {
             src="/abc.png"></img>
         </div>
         <Navbar />
-        <div className="flex-1 px-[80px] pt-[100px]">
+        <div className="flex-1 md:px-[80px] pt-[100px]">
             <Outlet />
         </div>
         <Footer />
